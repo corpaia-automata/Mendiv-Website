@@ -1,0 +1,12 @@
+{
+  "/about/page": "app/about/page.js",
+  "/assessment/page": "app/assessment/page.js",
+  "/bioalign/page": "app/bioalign/page.js",
+  "/biobrain-studio/page": "app/biobrain-studio/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/digital-twin/page": "app/digital-twin/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/lifescript/page": "app/lifescript/page.js",
+  "/neurosleep/page": "app/neurosleep/page.js",
+  "/page": "app/page.js"
+}
