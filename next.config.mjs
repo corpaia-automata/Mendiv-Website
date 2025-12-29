@@ -1,11 +1,15 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',   // 🔴 THIS IS THE FIX
-  images: {
-    unoptimized: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
+  output: 'standalone',
+  images: { unoptimized: true },
+  typescript: { ignoreBuildErrors: true },
+  experimental: {
+    outputFileTracingExcludes: {
+      '*': [
+        '**/node_modules/@swc/**',
+        '**/node_modules/eslint/**',
+        '**/node_modules/typescript/**',
+      ],
+    },
   },
 };
 
