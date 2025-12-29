@@ -75,8 +75,85 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$
 ;
 const metadata = {
     title: "Mendiv - Your Next Chapter | Life Engineering Platform",
-    description: "Engineering better health, clarity, and longevity through biology, mind, and environment. A premium health intelligence platform for high-performing professionals.",
-    generator: "v0.app",
+    description: "Mendiv is a premium life engineering platform that unlocks your biological age through personalized health optimization. Discover BioAlign, NeuroSleep, LifeScript, and Digital Twin technologies for measurable longevity and performance enhancement.",
+    generator: "Next.js",
+    applicationName: "Mendiv",
+    referrer: "origin-when-cross-origin",
+    keywords: [
+        "Mendiv",
+        "mendiv",
+        "life engineering",
+        "health optimization",
+        "longevity",
+        "biological age",
+        "biohacking",
+        "sleep science",
+        "NeuroSleep",
+        "BioAlign",
+        "LifeScript",
+        "Digital Twin",
+        "preventive health",
+        "health intelligence",
+        "personalized health",
+        "wellness platform",
+        "health optimization platform",
+        "longevity science",
+        "epigenetics",
+        "gut microbiome",
+        "biomarker tracking"
+    ],
+    authors: [
+        {
+            name: "Mendiv"
+        }
+    ],
+    creator: "Mendiv",
+    publisher: "Mendiv",
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false
+    },
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.mendiv.com"),
+    alternates: {
+        canonical: "/"
+    },
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "/",
+        title: "Mendiv - Your Next Chapter | Life Engineering Platform",
+        description: "Engineering better health, clarity, and longevity through biology, mind, and environment. A premium health intelligence platform for high-performing professionals.",
+        siteName: "Mendiv",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Mendiv - Life Engineering Platform"
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Mendiv - Your Next Chapter | Life Engineering Platform",
+        description: "Engineering better health, clarity, and longevity through biology, mind, and environment.",
+        images: [
+            "/og-image.png"
+        ],
+        creator: "@mendiv"
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1
+        }
+    },
     icons: {
         icon: [
             {
@@ -94,18 +171,7 @@ const metadata = {
         ],
         apple: "/apple-icon.png"
     },
-    keywords: [
-        "longevity",
-        "health optimization",
-        "sleep science",
-        "biohacking",
-        "life engineering",
-        "digital twin"
-    ],
-    openGraph: {
-        title: "Mendiv - Your Next Chapter",
-        description: "Engineering better health, clarity, and longevity through biology, mind, and environment.",
-        type: "website"
+    verification: {
     }
 };
 function RootLayout({ children }) {
@@ -118,18 +184,18 @@ function RootLayout({ children }) {
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 59,
+                    lineNumber: 132,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 57,
+            lineNumber: 130,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 56,
+        lineNumber: 129,
         columnNumber: 5
     }, this);
 }

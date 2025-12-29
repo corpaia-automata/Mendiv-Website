@@ -213,14 +213,16 @@ export function generateMetadata(
 ): Metadata {
   const config = seoConfig[page]
   const defaultImage = `${baseMetadata.siteUrl}/og-image.jpg`
+  const path = page === "home" ? "" : page
 
   return {
     title: config.title,
     description: config.description,
-    keywords: config.keywords,
+    keywords: [...config.keywords],
+
     openGraph: {
       ...config.openGraph,
-      url: `${baseMetadata.siteUrl}/${page === "home" ? "" : page}`,
+      url: `${baseMetadata.siteUrl}/${path}`,
       siteName: baseMetadata.siteName,
       images: [
         {
@@ -233,13 +235,18 @@ export function generateMetadata(
       locale: "en_US",
       type: "website",
     },
-    twitter: {
-      ...config.twitter,
-      images: [defaultImage],
-    },
+
+    twitter: "twitter" in config && config.twitter
+      ? {
+        ...config.twitter,
+        images: [defaultImage],
+      }
+      : undefined,
+
     alternates: {
-      canonical: `${baseMetadata.siteUrl}/${page === "home" ? "" : page}`,
+      canonical: `${baseMetadata.siteUrl}/${path}`,
     },
+
     robots: {
       index: true,
       follow: true,
@@ -251,28 +258,7 @@ export function generateMetadata(
         "max-snippet": -1,
       },
     },
+
     ...overrides,
   }
 }
-
-/**
- * Generate structured data (JSON-LD) for SEO
- */
-export function generateStructuredData(page: keyof typeof seoConfig) {
-  const config = seoConfig[page]
-  const baseUrl = baseMetadata.siteUrl
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: baseMetadata.siteName,
-    url: baseUrl,
-    description: config.description,
-    sameAs: [
-      // Add social media URLs when available
-      // "https://twitter.com/mendiv",
-      // "https://linkedin.com/company/mendiv",
-    ],
-  }
-}
-
